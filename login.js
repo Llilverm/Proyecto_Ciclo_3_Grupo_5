@@ -21,7 +21,7 @@ async function ingresar(){
         title:"Bienvenido",
         confirmButtonText:"Ingresar",
         html:`
-        <input class="swal2-input" placeholder="numero de cedula" id="usuario">
+        <input class="swal2-input" placeholder="numero2 de cedula" id="usuario">
         
         <input class="swal2-input" placeholder="contraseña" id="contraseña">
         `,
