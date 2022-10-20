@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Banco los Tipulantes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"/>
+   
+    <!--Para enlazar con la hoja de JavaScrip se debe agregar el enlace de la pagina-->
+    <script src="js/login.js"></script>
+   
+    </head>
 <body>
     <!--Se coloca logo, titulo, menu-->
     <header>
@@ -14,105 +24,73 @@
             <h3>BANCO LOS TRIPULANTES</h3>
             <h2>Formularios cambios</h2>
         </center>
-
-
     </header>
 
     <!--Se diseña el formulario-->
-    <main>
-
-        <form id="FormularioCliente">
-            <label for="Nombres">Ingresa Nombres</label>
-            <input class="input-form" type="text" placeholder="Nombre" id="Nombres" size="60px" minlength=5 required/>
-            <br><br/>
-            <label for="Apellidos">Ingresa Apellidos</label>
-            <input class="input-form" type="text" placeholder="Apellidos" id="Apellidos" size="60px" minlength=5 required/>
-            <br><br/>
-
-            <!--Lista desplegable con atributo Select -->
-            <label for="Tipo_Documento">Tipo de Documento</label>
-            <select class="input-form" id="Tipo_Documento">
-                <option value="CC" selected>Cedula de Ciudadania</option>
-                <option value="TI">Tarjeta de Identidad</option>
-                <option value="CE">Cedula de Extrangeria</option>
-
-            <label for="Documento">Documento</label>
-            <input class="input-form" type="text" placeholder="Documentos" id="Documentos" size="60px" minlength=5 required/>
-            <br><br/>
-
-            <label for="Documento">Documento</label>
-            <input class="input-form" type="text" placeholder="Documentos" id="Documentos" size="60px" minlength=5 required/>
-            <br><br/>
-
-            <label for="Telefono">Numero de Contacto</label>
-            <input class="input-form" type="text" placeholder="Telefono" id="Telefono" size="60px" minlength=5 required/>
-            <br><br/>
-
-            <label for="Correo">E-mail</label>
-            <input class="input-form" type="text" placeholder="Correo" id="Correo" size="60px" minlength=5 required/>
-            <br><br/>
-
-            <label for="Telefono">Numero de Contacto</label>
-            <input class="input-form" type="text" placeholder="Telefono" id="Telefono" size="60px" minlength=5 required/>
-            <br><br/>
-
-            <!--Lista desplegable con atributo Select para Tipo de Producto-->
-            <label for="Categoria">Categoria de producto</label>
-            <select class="input-form" id="Categoria">
-            <option value="Captacion" selected>Captación</option>
-                <label for="Captacion1">Subproductos Captación</label>
-                <select class="input-form" id="Captacion1">
-                    <option value="CDT">CDT</option>
-                    <option value="Fiducia">Fiducia</option>
-                    <option value="CuentaRentable">Cuenta Rentable</option>    
-
-            <option value="Colocacion">Colocación</option>
-                <label for="Colocacion1">Subproductos Colocación</label>
-                <select class="input-form" id="Colocacion1">
-                    <option value="TC">Tarjeta de Credito</option>
-                    <option value="CV">Credito Vehiculo</option>
-                    <option value="CF">Credito Fijo</option> 
-                    <option value="CR">Credito Rotativo</option> 
-                    <option value="CV">Credito Vivienda</option> 
-
-            <option value="Seguros">Seguros</option>
-                <label for="Seguros1">Subproductos Seguros</label>
-                <select class="input-form" id="Seguros1">
-                    <option value="Vida">Seguros de Vida</option>
-                    <option value="Proteccion">Protección de Pagos</option>
-            
-            <option value="Transacional">Transacional</option>    
-                <label for="Transacional1">Subproductos Seguros</label>
-                <select class="input-form" id="Transacional1">
-                    <option value="Portal">Portal</option>
-                    <option value="Adquirencias">Adquirencias</option>
-                    <option value="link">Link de Pagos</option>
-
-            </select>
-            <br><br/>
-
-            <input class="boton-formulario" type="submit" id="Boton" value="Guardar"/> 
-            <input class="boton-formulario" type="submit" id="Boton" value="Actualizar"/> 
-
-            
-            <br><br/>
-
-        </form>
+    <!--Boostrap pide crear un container y dentro del container un row-->
+    <main class="container">
+        <div class="row">
+     <br /><br />
  
-        </center>
-        <h4>NOMBRE</h4>
-        <h4>APELLIDO</h4>
-        <h4>TIPO DOCUMENTO</h4>
-        <h4>DOCUMENTO</h4>
-        <h4>TELEFONO</h4>
-        <h4>CORREO</h4>
-        <h4>TIPO DE PRODUCTO</h4>
-        <h4>CLASE DE PRODUCTO</h4>
-
-        </center>
+     <!--Se crea una caja formulario 1 con boostrap-->
+     <div class="formulario 1 col-0 col-md-2"></div>
 
 
-    </main>
+     <!--con col-12 si es celular se adapta a la pantalla con 12 columnas-->
+     <form class="col-12 col-md-8">  
+
+     <!--Para centrar el titulo del formulario se usa el style="text-align:center"-->
+     <br /><br />
+     <h1 style="text-align:center">Formulario Clientes</h1>
+         
+         <label class="form-label" for="Nombres">Ingresar Nombres</label>
+         <input class="form-control" type="text" placeholder="Nombre" id="Nombres" size="60px" minlength=5 required/>
+         <br><br/>
+
+         <label class="form-label" for="Apellidos">Ingresar Apellidos</label>
+         <input class="form-control" type="text" placeholder="Apellidos" id="Apellidos" size="60px" minlength=5 required/>
+         <br><br/>
+
+         <!--Ejemplo de lista desplegable con atributo Select -->
+         <label class="form-label" for="Tipo_Documento">Tipo de Documento</label>
+         <select class="form-select" id="Tipo_Documento">
+             <option value="CC" selected>Cedula de Ciudadania</option>
+             <option value="TI">Tarjeta de Identidad</option>
+             <option value="CE">Cedula de Extrangeria</option>
+                
+         <label class="form-label" for="Documento">Número de Documento</label>
+         <input class="form-control" type="number" placeholder="Documento" id="Documento" size="60px" minlength=5 required/>
+         <br><br/>
+
+         <label class="form-label" for="Telefono">Número de Contacto</label>
+         <input class="form-control" type="number" placeholder="Telefono" id="Telefono" size="60px" minlength=5 required/>
+         <br><br/>
+
+         <label class="form-label" for="Correo">E-mail</label>
+         <input class="form-control" type="text" placeholder="Correo" id="Correo" size="60px" minlength=5 required/>
+         <br><br/>
+
+         <!--lista desplegable con atributo Select -->
+         <label class="form-label" for="Tipo_Producto">Tipo de Producto</label>
+         <select class="form-select" id="Tipo_Producto">
+             <option value="Captacion" selected>Captación</option>
+             <option value="Colocacion">Colocación</option>
+             <option value="Seguros">Seguros</option>
+             <option value="Transacional">Transacional</option>
+         </select>
+         <br><br/> 
+
+         <!--Crear un boton -->
+         <input class="botones-formulario btn btn-outline-danger" type="submit" id="Boton" value="Guardar"/> 
+         <input class="botones-formulario btn btn-outline-danger" type="submit" id="Boton" value="Cancelar"/>
+         <br><br/> <br><br/>
+
+
+     </form>
+
+     <p id="parrafo1">  </p>
+     </div>    
+ </main>    
 
     <!--Informacion del proyecto, grupo, redes sociales-->
     <footer>
