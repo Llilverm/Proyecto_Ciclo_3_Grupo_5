@@ -11,7 +11,7 @@
     <header>
         <center>
             <h1>COMPORTAMIENTO VENTAS ASESORES</h1>
-            <H3>BANCO LOS TRIPULANTES</H3>
+            <h3>BANCO LOS TRIPULANTES</h3>
             <h2>Formularios cambios</h2>
         </center>
 
@@ -20,6 +20,85 @@
 
     <!--Se diseña el formulario-->
     <main>
+
+        <form id="FormularioCliente">
+            <label for="Nombres">Ingresa Nombres</label>
+            <input class="input-form" type="text" placeholder="Nombre" id="Nombres" size="60px" minlength=5 required/>
+            <br><br/>
+            <label for="Apellidos">Ingresa Apellidos</label>
+            <input class="input-form" type="text" placeholder="Apellidos" id="Apellidos" size="60px" minlength=5 required/>
+            <br><br/>
+
+            <!--Lista desplegable con atributo Select -->
+            <label for="Tipo_Documento">Tipo de Documento</label>
+            <select class="input-form" id="Tipo_Documento">
+                <option value="CC" selected>Cedula de Ciudadania</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="CE">Cedula de Extrangeria</option>
+
+            <label for="Documento">Documento</label>
+            <input class="input-form" type="text" placeholder="Documentos" id="Documentos" size="60px" minlength=5 required/>
+            <br><br/>
+
+            <label for="Documento">Documento</label>
+            <input class="input-form" type="text" placeholder="Documentos" id="Documentos" size="60px" minlength=5 required/>
+            <br><br/>
+
+            <label for="Telefono">Numero de Contacto</label>
+            <input class="input-form" type="text" placeholder="Telefono" id="Telefono" size="60px" minlength=5 required/>
+            <br><br/>
+
+            <label for="Correo">E-mail</label>
+            <input class="input-form" type="text" placeholder="Correo" id="Correo" size="60px" minlength=5 required/>
+            <br><br/>
+
+            <label for="Telefono">Numero de Contacto</label>
+            <input class="input-form" type="text" placeholder="Telefono" id="Telefono" size="60px" minlength=5 required/>
+            <br><br/>
+
+            <!--Lista desplegable con atributo Select para Tipo de Producto-->
+            <label for="Categoria">Categoria de producto</label>
+            <select class="input-form" id="Categoria">
+            <option value="Captacion" selected>Captación</option>
+                <label for="Captacion1">Subproductos Captación</label>
+                <select class="input-form" id="Captacion1">
+                    <option value="CDT">CDT</option>
+                    <option value="Fiducia">Fiducia</option>
+                    <option value="CuentaRentable">Cuenta Rentable</option>    
+
+            <option value="Colocacion">Colocación</option>
+                <label for="Colocacion1">Subproductos Colocación</label>
+                <select class="input-form" id="Colocacion1">
+                    <option value="TC">Tarjeta de Credito</option>
+                    <option value="CV">Credito Vehiculo</option>
+                    <option value="CF">Credito Fijo</option> 
+                    <option value="CR">Credito Rotativo</option> 
+                    <option value="CV">Credito Vivienda</option> 
+
+            <option value="Seguros">Seguros</option>
+                <label for="Seguros1">Subproductos Seguros</label>
+                <select class="input-form" id="Seguros1">
+                    <option value="Vida">Seguros de Vida</option>
+                    <option value="Proteccion">Protección de Pagos</option>
+            
+            <option value="Transacional">Transacional</option>    
+                <label for="Transacional1">Subproductos Seguros</label>
+                <select class="input-form" id="Transacional1">
+                    <option value="Portal">Portal</option>
+                    <option value="Adquirencias">Adquirencias</option>
+                    <option value="link">Link de Pagos</option>
+
+            </select>
+            <br><br/>
+
+            <input class="boton-formulario" type="submit" id="Boton" value="Guardar"/> 
+            <input class="boton-formulario" type="submit" id="Boton" value="Actualizar"/> 
+
+            
+            <br><br/>
+
+        </form>
+ 
         </center>
         <h4>NOMBRE</h4>
         <h4>APELLIDO</h4>
