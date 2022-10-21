@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.2/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bienvenido a banco Z</title>
 </head>
+
 <body>
-    <h1>Prueba Sitio Proyecto</h1>
-    <script src="login.js"></script>
-    <script>
-        ingresar()
-    </script>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <button class="sign-up-btn">Iniciar Sesion</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Contacto de soporte tecnico</h2>
+            <div class="iconos">
+                <div >
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div >
+                </div>
+            </div>
+            <p class="cuenta-gratis">SOPORTE</p>
+            
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form  name="form" class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="iconos">
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+            </div>
+            <p class="cuenta-gratis">ASESOR BANCARIO</p>
+            <input type="text" placeholder="Numero de Cedula" name="login">
+            <input type="password" placeholder="Contraseña"  name="password">
+            <input onclick="ir()" type="button" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>¿aun no estas registrado?</h2>
+                <p>comunicate con el personal de soporte</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-   
 
 </html>
