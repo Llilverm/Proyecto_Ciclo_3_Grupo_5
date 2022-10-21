@@ -22,11 +22,11 @@
         <center>
             <h1>COMPORTAMIENTO VENTAS ASESORES</h1>
             <h3>BANCO LOS TRIPULANTES</h3>
-            <h2>Formularios cambios</h2>
+            
         </center>
     </header>
 
-    <!--Se diseña el formulario-->
+        <!--Se diseña el formulario-->
     <!--Boostrap pide crear un container y dentro del container un row-->
     <main class="container">
         <div class="row">
@@ -57,27 +57,59 @@
              <option value="CC" selected>Cedula de Ciudadania</option>
              <option value="TI">Tarjeta de Identidad</option>
              <option value="CE">Cedula de Extrangeria</option>
+            </select>                                                                                                       
+             <br><br/>
+        
                 
-         <label class="form-label" for="Documento">Número de Documento</label>
-         <input class="form-control" type="number" placeholder="Documento" id="Documento" size="60px" minlength=5 required/>
-         <br><br/>
+        <label class="form-label" for="Documento">Número de Documento</label>
+        <input class="form-control" type="number" placeholder="Documento" id="Documento" size="60px" minlength=5 required/>
+        <br><br/>
+
 
          <label class="form-label" for="Telefono">Número de Contacto</label>
          <input class="form-control" type="number" placeholder="Telefono" id="Telefono" size="60px" minlength=5 required/>
          <br><br/>
 
+       
+
          <label class="form-label" for="Correo">E-mail</label>
          <input class="form-control" type="text" placeholder="Correo" id="Correo" size="60px" minlength=5 required/>
          <br><br/>
 
-         <!--lista desplegable con atributo Select -->
+        
          <label class="form-label" for="Tipo_Producto">Tipo de Producto</label>
          <select class="form-select" id="Tipo_Producto">
-             <option value="Captacion" selected>Captación</option>
-             <option value="Colocacion">Colocación</option>
-             <option value="Seguros">Seguros</option>
-             <option value="Transacional">Transacional</option>
-         </select>
+                <option value="-1">--Categoria de Producto--</option>
+                <option data-ref="Cap">Captacion</option>
+                <option data-ref="Col">Colocación</option>
+                <option data-ref="Seg">Seguros</option>
+                <option data-ref="Tran">Transacional</option>
+        </select>    
+        <br><br/>
+    
+        <label class="form-label" for="Tipo_Producto">Subcategoria de Producto</label>
+        <select class="form-control province selectfilter" data-targer="city">
+                <option value="-1">--Subcategoria de Producto--</option>
+                <option data-ref="cdt" data-belong="Cap">CDT</option>
+                <option data-ref="fid" data-belong="Cap">Fiducia</option>
+                <option data-ref="cta" data-belong="Cap">Cuenta Rentable</option>
+    
+                <option data-ref="tc" data-belong="Col">Tarjeta de Credito</option>
+                <option data-ref="cv" data-belong="Col">Credito de Vehiculo</option>
+                <option data-ref="cf" data-belong="Col">Credito Fijo</option>
+                <option data-ref="cr" data-belong="Col">Credito Rotativo</option>
+                <option data-ref="cv" data-belong="Col">Credito de Vivienda</option>
+               
+                <option data-ref="sv" data-belong="Seg">Seguro de Vida</option>
+                <option data-ref="sp" data-belong="Seg">Proteccion de Pagos</option>
+    
+                <option data-ref="por" data-belong="Tran">Portal</option>
+                <option data-ref="adq" data-belong="Tran">Adquirencias</option>
+                <option data-ref="lp" data-belong="Tran">Link de Pagos</option>
+            
+                
+            </select>
+        
          <br><br/> 
 
          <!--Crear un boton -->
@@ -85,8 +117,11 @@
          <input class="botones-formulario btn btn-outline-danger" type="submit" id="Boton" value="Cancelar"/>
          <br><br/> <br><br/>
 
+
      </form>
 
+
+     
      <p id="parrafo1">  </p>
      </div>    
  </main>    
