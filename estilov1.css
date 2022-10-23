@@ -1,0 +1,134 @@
+.text{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    background-color:none;
+}
+.caja1{    
+    height: 120px;
+    position: relative;
+}
+.caja1 h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.caja2{ 
+      
+    height: 150px;
+    position: relative;
+}
+.caja2 img{
+    position: absolute;
+    left: 66%;
+    top: 66%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.caja3{ 
+    
+    text-align: justify;      
+    height: 150px;
+    position: relative;
+}
+.caja3 h2{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.botones-formulario1{
+    width: 20%;
+    position:absolute;
+    left: 28%;
+}
+.botones-formulario2{
+    width: 20%;
+    position:absolute;
+    left: 52%;
+}
+
+body{
+    background-image: url(imagenes/cielo.jpeg);
+    font-family: 'Nunito Sans', sans-serif;
+}
+h3{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.caja1footer{
+    width: 33%;
+    left: 1%;
+    height: 300px;
+    background-color: rgba(70, 125, 159, 0.857);
+    float: left;
+    position: relative;
+}
+.caja1footer img{
+    position: absolute;
+    left: 29%;
+    top: 23%;
+    height: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.caja5 {
+    position: absolute;
+    left: 32%;
+    top: 50%;
+    height: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.caja2footer{
+    width: 33%;
+    height: 300px;
+    left: 1%;
+    background-color: rgba(70, 125, 159, 0.857);
+    float: left;
+    position: relative;
+}
+.caja2footer h4{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.caja7 {
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.caja3footer{
+    width: 33%;
+    height: 300px;
+    left: 1%;
+    background-color: rgba(70, 125, 159, 0.857);
+    float: left;
+    position: relative;
+}
+.caja3footer h5{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.caja9 {
+    
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}

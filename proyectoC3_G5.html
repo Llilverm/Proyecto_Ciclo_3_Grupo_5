@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco los Tipulantes </title>
+    <title>Banco los Tripulantes </title>    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="estilov1.css" rel="stylesheet"/>
 
-    <!--Fuentes-->
+    <!--Fuentes de estilos de letra-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"/>
@@ -15,172 +16,176 @@
     <!--Para enlazar con la hoja de JavaScrip se debe agregar el enlace de la pagina-->
     <script src="js/login.js"></script>
    
-    </head>
+</head>
 <body>
-    <!--Se coloca logo, titulo, menu-->
-    <header style="background-color:rgb(196, 229, 241) ;">
-        <div class="caja1 col-12 col-md-6">
-            <img src="imagenes/imag1.jpg" alt="LOGO BANCO" height="80px" width="120px"/>
-            </a>
+    <header class="container">
+        <div class="row" background-color=>
+            <div class="caja1 col-12 col-md-12">
+                <h1>BANCO LOS TRIPULANTES</h1>                
+            </div>
+
+            <div class="caja2 col-12 col-md-6">
+                <img src="imagenes/logoBanco.png" alt="logo de la imagen del banco">                
+            </div>
+
+            <div class="caja3 col-12 col-md-6">
+                <h2 style="text-align:center">INFORME COMERCIAL DE VENTAS</h2>
+            </div>
+
         </div>
 
-        <center>
-            <h1>COMPORTAMIENTO VENTAS ASESORES</h1>
-            <h3>BANCO LOS TRIPULANTES</h3>
-            
-        </center>
     </header>
+    <br /><br />
 
         <!--Se diseña el formulario-->
     <!--Boostrap pide crear un container y dentro del container un row-->
     <main class="container">
         <div class="row">
-     <br /><br />
+            <br /><br />
  
-     <!--Se crea una caja formulario 1 con boostrap-->
-     <div class="formulario 1 col-0 col-md-2"></div>
+             <!--Se crea una caja formulario 1 con boostrap-->
+            <div class="formulario 1 col-0 col-md-2"></div>
 
 
-     <!--con col-12 si es celular se adapta a la pantalla con 12 columnas-->
-     <form class="col-12 col-md-8">  
+            <!--con col-12 si es celular se adapta a la pantalla con 12 columnas-->
+            <form class="col-12 col-md-8">  
 
-     <!--Para centrar el titulo del formulario se usa el style="text-align:center"-->
-     <br /><br />
-     <h1 style="text-align:center">Formulario Clientes</h1>
+                <!--Para centrar el titulo del formulario se usa el style="text-align:center"-->
+                <br /><br />
+                <h3 style="text-align:center">Formulario Clientes</h3>
          
-         <label class="form-label" for="Nombres">Ingresar Nombres</label>
-         <input class="form-control" type="text" placeholder="Nombre" id="Nombres" size="60px" minlength=5 required/>
-         <br><br/>
+                <label class="form-label" for="Nombres"> Nombres</label>
+                <input class="form-control" type="text" placeholder="Nombre" id="Nombres" size="60px" minlength=5 required/>
+                <br><br/>
 
-         <label class="form-label" for="Apellidos">Ingresar Apellidos</label>
-         <input class="form-control" type="text" placeholder="Apellidos" id="Apellidos" size="60px" minlength=5 required/>
-         <br><br/>
+                <label class="form-label" for="Apellidos"> Apellidos</label>
+                <input class="form-control" type="text" placeholder="Apellidos" id="Apellidos" size="60px" minlength=5 required/>
+                <br><br/>
 
-         <!--Ejemplo de lista desplegable con atributo Select -->
-         <label class="form-label" for="Tipo_Documento">Tipo de Documento</label>
-         <select class="form-select" id="Tipo_Documento">
-             <option value="CC" selected>Cedula de Ciudadania</option>
-             <option value="TI">Tarjeta de Identidad</option>
-             <option value="CE">Cedula de Extrangeria</option>
-            </select>                                                                                                       
-             <br><br/>
+                <!--Ejemplo de lista desplegable con atributo Select -->
+                <label class="form-label" for="Tipo_Documento">Tipo de Documento</label>
+                <select class="form-select" id="Tipo_Documento">
+                <option value="CC" selected>Cedula de Ciudadania</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="CE">Cedula de Extranjeria</option>
+                </select>                                                                                                       
+                <br><br/>
         
                 
-        <label class="form-label" for="Documento">Número de Documento</label>
-        <input class="form-control" type="number" placeholder="Documento" id="Documento" size="60px" minlength=5 required/>
-        <br><br/>
+                <label class="form-label" for="Documento">Número de Documento</label>
+                <input class="form-control" type="number" placeholder="Documento" id="Documento" size="60px" minlength=5 required/>
+                <br><br/>
 
 
-         <label class="form-label" for="Telefono">Número de Contacto</label>
-         <input class="form-control" type="number" placeholder="Telefono" id="Telefono" size="60px" minlength=5 required/>
-         <br><br/>
+                <label class="form-label" for="Telefono">Número de Contacto</label>
+                <input class="form-control" type="number" placeholder="Telefono" id="Telefono" size="60px" minlength=5 required/>
+                <br><br/>
 
        
 
-         <label class="form-label" for="Correo">E-mail</label>
-         <input class="form-control" type="text" placeholder="Correo" id="Correo" size="60px" minlength=5 required/>
-         <br><br/>
+                <label class="form-label" for="Correo">E-mail</label>
+                <input class="form-control" type="text" placeholder="Correo" id="Correo" size="60px" minlength=5 required/>
+                <br><br/>
 
         
-         <label class="form-label" for="Tipo_Producto">Tipo de Producto</label>
-         <select class="form-select" id="Tipo_Producto">
-                <option value="-1">--Categoria de Producto--</option>
-                <option data-ref="Cap">Captacion</option>
-                <option data-ref="Col">Colocación</option>
-                <option data-ref="Seg">Seguros</option>
-                <option data-ref="Tran">Transacional</option>
-        </select>    
-        <br><br/>
+                <label class="form-label" for="Tipo_Producto">Tipo de Producto</label>
+                <select class="form-select" id="Tipo_Producto">
+                    <option value="-1">--Categoria de Producto--</option>
+                    <option data-ref="Cap">Captacion</option>
+                    <option data-ref="Col">Colocación</option>
+                    <option data-ref="Seg">Seguros</option>
+                    <option data-ref="Tran">Transacional</option>
+                </select>    
+                <br><br/>
     
-        <label class="form-label" for="Tipo_Producto">Subcategoria de Producto</label>
-        <select class="form-control province selectfilter" data-targer="city">
-                <option value="-1">--Subcategoria de Producto--</option>
-                <option data-ref="cdt" data-belong="Cap">CDT</option>
-                <option data-ref="fid" data-belong="Cap">Fiducia</option>
-                <option data-ref="cta" data-belong="Cap">Cuenta Rentable</option>
+                <label class="form-label" for="Tipo_Producto">Subcategoria de Producto</label>
+                    <select class="form-control province selectfilter" data-targer="city">
+                        <option value="-1">--Subcategoria de Producto--</option>
+                        <option data-ref="cdt" data-belong="Cap">CDT</option>
+                        <option data-ref="fid" data-belong="Cap">Fiducia</option>
+                        <option data-ref="cta" data-belong="Cap">Cuenta Rentable</option>
     
-                <option data-ref="tc" data-belong="Col">Tarjeta de Credito</option>
-                <option data-ref="cv" data-belong="Col">Credito de Vehiculo</option>
-                <option data-ref="cf" data-belong="Col">Credito Fijo</option>
-                <option data-ref="cr" data-belong="Col">Credito Rotativo</option>
-                <option data-ref="cv" data-belong="Col">Credito de Vivienda</option>
+                        <option data-ref="tc" data-belong="Col">Tarjeta de Credito</option>
+                        <option data-ref="cv" data-belong="Col">Credito de Vehiculo</option>
+                        <option data-ref="cf" data-belong="Col">Credito Fijo</option>
+                        <option data-ref="cr" data-belong="Col">Credito Rotativo</option>
+                        <option data-ref="cv" data-belong="Col">Credito de Vivienda</option>
                
-                <option data-ref="sv" data-belong="Seg">Seguro de Vida</option>
-                <option data-ref="sp" data-belong="Seg">Proteccion de Pagos</option>
+                        <option data-ref="sv" data-belong="Seg">Seguro de Vida</option>
+                        <option data-ref="sp" data-belong="Seg">Proteccion de Pagos</option>
     
-                <option data-ref="por" data-belong="Tran">Portal</option>
-                <option data-ref="adq" data-belong="Tran">Adquirencias</option>
-                <option data-ref="lp" data-belong="Tran">Link de Pagos</option>
-            
+                        <option data-ref="por" data-belong="Tran">Portal</option>
+                        <option data-ref="adq" data-belong="Tran">Adquirencias</option>
+                        <option data-ref="lp" data-belong="Tran">Link de Pagos</option>            
                 
-            </select>
+                    </select>
         
-         <br><br/> 
+                    <br><br/> 
 
-         <!--Crear un boton 
-         <input class="botones-formulario btn btn-outline-danger" type="submit" id="Boton" value="Guardar"/>--> 
-         <input class="botones-formulario btn btn-outline-primary" type="submit" id="Boton" value="Guardar"/>
-         <input class="botones-formulario btn btn-outline-primary" type="submit" id="Boton" value="Cancelar"/>
-         <br><br/> <br><br/>
+                <!--Crear un boton -->
+                <input class="botones-formulario1 btn btn-outline-primary" type="submit" id="Boton" value="Guardar"/>
+                <input class="botones-formulario2 btn btn-outline-primary" type="submit" id="Boton" value="Cancelar"/>
+                <br><br/> <br><br/>
 
+            </form>
 
-     </form>
+        </div>
+    </main>
 
+<!--informacion del proyecto,grupo,redes sociales,etc..-->
 
-
-     <p id="parrafo1">  </p>
-     </div>    
- </main>    
-
-    <!--Informacion del proyecto, grupo, redes sociales-->
-    <footer style="background-color:rgb(196, 229, 241) ;">
-        <div class="caja1 col-12 col-md-6">
+<footer>
+    
+    <div class="caja1footer">
+        <div class="caja4 col-12 col-md-6">
             <a href="https://misiontic.unab.edu.co/?p=1">
-                <img src="imagenes/Logo Pie Pagina.jpg" alt="LOGO UNAB" height="40px" width="150px"/>
+                <img src="imagenes/Logo Pie Pagina.jpg" alt="LOGO UNAB" height="40px" width="200px"/>
             </a>
         </div>
-        <div class="row">
-            <div class="col-8">
-                <center>
-                    <h4>Programa Mision TIC 2022</h4>
-                    <h5>Proyecto Ciclo 3 Grupo 5</h5>
-                </center>
-                
-                <div class="container">
-                    <p>Se realizará un proyecto que aplica los principios, 
-                        técnicas, metodologías y herramientas de la 
-                        ingeniería del software para el desarrollo de 
-                        aplicaciones WEB, utilizando repositorios de 
-                        código y diseño Backend - Frontend con autocrítica, 
-                        responsabilidad y eficiencia con las siguientes 
-                        herramientas para diseño WEB, como el lenguaje 
-                        de marcas para hipertexto HTML, hojas de estilo 
-                        CSS y lenguaje JavaScript con eficiencia y 
-                        autocrítica.
-                    </p>
-                </div>
-            </div>
-            <div class="col-4">
-            <h5>INTEGRANTES</h5>
-            <p><a href="https://misiontic2022.unab.edu.co/user/view.php?id=2325&course=751">Leidy Gutierrez León</a></p>
-            <p><a href="https://misiontic2022.unab.edu.co/user/view.php?id=2300&course=751">Victmar Lucent Moncada Osorio</a></p>
-            <p><a href="https://misiontic2022.unab.edu.co/user/view.php?id=2324&course=751">José Leonardo Guzman</a></p>
-            <p><a href="https://misiontic2022.unab.edu.co/user/view.php?id=2299&course=751">Yara Cecilia Sanchez Jimenez</a></p>
-            <p><a href="https://misiontic2022.unab.edu.co/user/view.php?id=2307&course=751">Llilver Yujan Montero Gonzalez</a></p> 
-                      
-            </div>
 
+        <div class="caja5 col-12 col-md-6">
+            <p>El objetivo del programa es servir de ayuda a los asesores comerciales y al director de una oficina bancaria en la  administracion de las ventas realizadas en tiempo real .</p>
+            
         </div>
-    </div>
-    <div style="background-color:black ;" class="caja3">
-        <center style="color:aliceblue">
-            <h6>Copyright © 2022 - Unab</h6>
-        </center>
+
         
     </div>
-        <div class="caja3"></div>
 
-    </footer>
+    <div class="caja2footer">
+
+        <div class="caja6 col-12 col-md-4">
+         <h4>INTEGRANTES</h4>   
+        </div>
+
+        <div class="caja7 col-12 col-md-6">
+            <p><a style="color:white" href="https://misiontic2022.unab.edu.co/user/view.php?id=2325&course=751">Leidy Gutierrez León</a></p>
+            <p><a style="color:white" href="https://misiontic2022.unab.edu.co/user/view.php?id=2300&course=751">Victmar Moncada Osorio</a></p>
+            <p><a style="color:white" href="https://misiontic2022.unab.edu.co/user/view.php?id=2324&course=751">José Leonardo Guzman</a></p>
+            <p><a style="color:white" href="https://misiontic2022.unab.edu.co/user/view.php?id=2299&course=751">Yara Cecilia Sanchez Jimenez</a></p>
+            <p><a style="color:white" href="https://misiontic2022.unab.edu.co/user/view.php?id=2307&course=751">Llilver Yujan Montero Gonzalez</a></p>
+        </div>
+        
+    </div>
+
+    <div class="caja3footer">
+        <div class="caja8 col-12 col-md-4">
+            <h5>CONTACTOS</h5>
+        </div>
+   
+        <div class="caja9 col-12 col-md-6">
+            <p><a style="color:white" href="mailto:leidy.gutierrez.leon@gmail.com" target="self">leidy.gutierrez.leon@gmail.com</a></p>
+            <p><a style="color:white" href="mailto:moncadaosorio@yahoo.es" target="self">moncadaosorio@yahoo.es</p>
+            <p><a style="color:white" href="mailto:josel2131@hotmail.com" target="self">josel2131@hotmail.com</a></p>
+            <p><a style="color:white" href="mailto:yarahober@gmail.com" target="self">yarahober@gmail.com</a></p>
+            <p><a style="color:white" href="mailto:llilverm@gmail.com" target="self">llilverm@gmail.com</a></p>
+        </div>
+
+    </div>
+
+        
+
+</footer>
+<br><br/> <br><br/><br><br/> <br><br/><br><br/><br><br/><br><br/>
 
     
 </body>
