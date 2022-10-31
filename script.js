@@ -18,6 +18,6 @@ function ir (){
     window.location="proyectoC3_G5.html";}
 
     else{
-    alert("porfa.");}
+    alert("porfa digita correctamente tu usuario o contraseña.");}
 
 }
